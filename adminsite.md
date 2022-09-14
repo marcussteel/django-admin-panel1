@@ -107,7 +107,7 @@ Add data with Faker package
 py manage.py shell
 go to shell:
 ```bash
-from product.models import Product
+from products.models import Product
 from faker import Faker
 faker = Faker()
 
