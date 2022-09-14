@@ -164,8 +164,8 @@ admin.site.register(Product, ProductAdmin)
 ```
 
 actions section:
-```python
-
+```python admin
+j
    actions = ("is_in_stock", )
 
    def is_in_stock(self, request, queryset):
@@ -178,6 +178,9 @@ actions section:
 Add methods to modelAdmin:
 
 ```python
+
+        from django.utils import timezone
+
 		list_display = ("name", "create_date", "is_in_stock", "update_date", "added_days_ago")    
 	
 	    def added_days_ago(self, product):
